@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ramkishore-personal-portfolio/static/css/main.3e191ffd.css",
-    "main.js": "/ramkishore-personal-portfolio/static/js/main.7f753cec.js",
+    "main.js": "/ramkishore-personal-portfolio/static/js/main.bf94afff.js",
     "static/media/image1.png": "/ramkishore-personal-portfolio/static/media/image1.874849744cab49a075c3.png",
     "static/media/ramki_flat_illustration.png": "/ramkishore-personal-portfolio/static/media/ramki_flat_illustration.57107a2bdbe2bd3139a1.png",
     "static/media/instagram.png": "/ramkishore-personal-portfolio/static/media/instagram.8e408da00539cdef4629.png",
@@ -17,10 +17,10 @@
     "static/media/image6.svg": "/ramkishore-personal-portfolio/static/media/image6.27eb898bd7125d178d81ba4539fb1347.svg",
     "index.html": "/ramkishore-personal-portfolio/index.html",
     "main.3e191ffd.css.map": "/ramkishore-personal-portfolio/static/css/main.3e191ffd.css.map",
-    "main.7f753cec.js.map": "/ramkishore-personal-portfolio/static/js/main.7f753cec.js.map"
+    "main.bf94afff.js.map": "/ramkishore-personal-portfolio/static/js/main.bf94afff.js.map"
   },
   "entrypoints": [
     "static/css/main.3e191ffd.css",
-    "static/js/main.7f753cec.js"
+    "static/js/main.bf94afff.js"
   ]
 }
