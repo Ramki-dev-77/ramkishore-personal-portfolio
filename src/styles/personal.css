@@ -1,0 +1,180 @@
+.biography{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+}
+.biography-bio{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    color: red;
+}
+.biography-bio h1,h2,p{
+    margin: 0;
+    color: black
+}
+.biography-bio h1{
+    font-size: 65px;
+    color: black;
+    /* letter-spacing: 5px; */
+}
+.biography-bio h2{
+    font-size: 30px;
+}
+.biography-bio p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.biography-bio span{
+    color: rgb(47, 31, 167);
+}
+.biography-bio button{
+    background-color:rgb(47, 31, 167);
+    border: none;
+    padding: 10px;
+    width: 25%;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.biography-bio button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.biography-img{
+    width: 50%;
+    display: contents;
+
+}
+.myImage{
+    /* border-radius: 100px; */
+    border: none;
+    object-fit: cover;  
+    object-position: center; 
+    /* border-radius: 20px; */
+    border-radius: 20px;
+    
+}
+.about-page{
+    padding-top: 0px;
+}
+.about-page>h1{
+    text-align: center;
+    margin: 0;
+}
+.about-page h1{
+    color: black;
+}
+.about-page p{
+    color: black;
+    font-size: large;
+}
+.skills{
+    padding: 0%;
+}
+.skills li{
+    color: black;
+    font-size: large;
+}
+.about_me_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border: 5px solid; */
+}
+.about_me_container_bio{
+    width: 50%;
+}
+.image{
+    transform: scaleX(-1); 
+    border-radius: 40px;
+}
+
+.social-media-links{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.social-media-links img{
+    border-radius: 11px;
+}
+.social-media{
+    padding: 5px;
+}
+.social-media-links img:hover{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    .biography{
+        flex-direction: column;
+        align-items: center;
+    }
+    .biography-bio{
+        width: 100%;
+        padding: 0px;
+    }
+    .biography-img{
+        width: 100%;
+    }
+    .biography-img img{
+        width: auto;
+        height: auto;
+    }
+    .biography-bio h1{
+        font-size: 40px;
+    }
+    .biography-bio h2{
+        font-size: 25px;
+    }
+    .biography-bio p{
+        font-size: 15px;
+    }
+    .biography-bio button{
+        width: 100%;
+    }
+    .myImage{
+        width: 100%;
+        height: auto;
+    }
+    .about_me_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_me_container_bio{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .about_me_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_me_container_img{
+        width: 100%;
+    }
+
+    .about_me_container_bio p{
+        width: 100%;
+    }
+    .about_me_container_img img{
+        display: none;
+    }
+    .biography-img img{
+        height: 320px;
+        width: 200px;
+    }
+    .biography-bio h1{
+        font-size: 30px;
+    }
+    .biography-bio{
+        padding: 10px;
+    }
+}

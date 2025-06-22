@@ -1,0 +1,35 @@
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    padding: 10px;
+    row-gap: 90px;
+    margin-bottom: 50px;
+}
+.project-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    row-gap: 10px;
+    border-radius: 20px;
+}
+.project-manager{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(222, 209, 209);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    transition: 1s all ease-in-out;
+}
+.project-manager:hover{
+    scale: 1.15;
+    cursor: pointer;
+}

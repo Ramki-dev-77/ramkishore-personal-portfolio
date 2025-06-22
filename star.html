@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <style>
+        span{
+            color: yellow;
+            font-size: 100px;
+        }
+        span:hover{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <span class="star" onclick="changeColor(0)">&#x2606;</span>
+    <span class="star" onclick="changeColor(1)">&#x2606;</span>
+    <span class="star" onclick="changeColor(2)">&#x2606;</span>
+    <span class="star" onclick="changeColor(3)">&#x2606;</span>
+    <span class="star" onclick="changeColor(4)">&#x2606;</span>
+    <script>
+        function changeColor(value){
+            const star = document.getElementsByClassName("star");
+            for(let i = 0;i < star.length;i++){
+                if(i <= value){
+                    const star = document.getElementsByClassName("star")[i];
+                    star.style.color = 'red';
+                }
+                else{
+                    const star = document.getElementsByClassName("star")[i];
+                    star.style.color = 'yellow';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
