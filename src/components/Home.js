@@ -20,7 +20,7 @@ function Home(){
                         <h1>Ramkishore A V</h1>
                         <h2>Passionate Full Stack Developer</h2>
                         <p>"I’m currently studying <span>B.Tech in Information Technology</span> at Sri Venkateswara College of Engineering. I’m diving deep into web development and am excited about building dynamic, user-friendly web applications, both on the frontend and backend. I’m continuously learning and experimenting with trending and popular technologies."</p>
-                        <a href="assets\Ramkishore Resume.pdf" download="Ramkishore_Resume.pdf">
+                        <a href="assets\Resume - Ramkishore.pdf" download="Resume - Ramkishore.pdf">
                             <button>Download Resume</button>
                         </a>
                         <br></br>

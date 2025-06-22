@@ -54,7 +54,6 @@ function Projects(){
             
             
         ];
-        console.log(projects);
     return (
         <>
         <h1 style={{color:'black',textAlign:'center'}}>Projects</h1>
