@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ramkishore-personal-portfolio/static/css/main.7e5e91ec.css",
+    "main.js": "/ramkishore-personal-portfolio/static/js/main.65238a96.js",
+    "static/media/ramki_flat_illustration.png": "/ramkishore-personal-portfolio/static/media/ramki_flat_illustration.57107a2bdbe2bd3139a1.png",
+    "static/media/undraw_designer_efwz.svg": "/ramkishore-personal-portfolio/static/media/undraw_designer_efwz.de6f76fd3ca06010252533c5b48d8048.svg",
+    "static/media/undraw_luggage_k1gn.svg": "/ramkishore-personal-portfolio/static/media/undraw_luggage_k1gn.b626a7aba0488ee8dedce9bf8d4ac98c.svg",
+    "static/media/undraw_certificate_71gt.svg": "/ramkishore-personal-portfolio/static/media/undraw_certificate_71gt.e7e15a45c80cf3ba93fa12341aa6b109.svg",
+    "static/media/undraw_developer-avatar_f6ac.svg": "/ramkishore-personal-portfolio/static/media/undraw_developer-avatar_f6ac.89691d52d08528ab914db3572e33600c.svg",
+    "index.html": "/ramkishore-personal-portfolio/index.html",
+    "main.7e5e91ec.css.map": "/ramkishore-personal-portfolio/static/css/main.7e5e91ec.css.map",
+    "main.65238a96.js.map": "/ramkishore-personal-portfolio/static/js/main.65238a96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e5e91ec.css",
+    "static/js/main.65238a96.js"
+  ]
+}
