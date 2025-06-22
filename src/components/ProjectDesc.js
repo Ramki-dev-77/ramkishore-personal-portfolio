@@ -4,7 +4,7 @@ function ProjectCard(props){
     return(
         <div>
             <div className='project-card'>
-                <img src={props.image} height={200} width={320} />
+                <img src={props.image} height={200} width={320} alt={props.image}/>
 
                 <div className='project-manager'>
                     <p>
@@ -26,4 +26,4 @@ function ProjectCard(props){
 }
 
 
-export {ProjectCard};
+export default ProjectCard;
