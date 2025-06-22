@@ -1,9 +1,12 @@
 import React from "react";
 import '../styles/personal.css';
-// import myImage from './My_Image-removebg-preview.png';
 import SocialMediaComponent from "./SocialMediaComponent";
 import About from "./About";
 import cartoonRam from '../Images/ramki_flat_illustration.png';
+import LinkedIn from '../Images/logo/linkedin.png';
+import Whatsapp from '../Images/logo/whatsapp.png';
+import Insta from '../Images/logo/instagram.png';
+import Gmail from '../Images/logo/gmail.png';
 function Home(){
     return(
         <div>
@@ -24,13 +27,13 @@ function Home(){
                         <div className="social-media-container">
                         <div className="social-media-links">
                             {/* <p style={{fontSize:20}}>👉</p> */}
-                            <SocialMediaComponent name="LinkedIn" link="https://www.linkedin.com/in/ramkishore-a-v-aa866828b/" source="assets/linkedin.png"/>
+                            <SocialMediaComponent name="LinkedIn" link="https://www.linkedin.com/in/ramkishore-a-v-aa866828b/" source={LinkedIn}/>
 
-                            <SocialMediaComponent name="Whatsapp" link="https://wa.me/9952982610" source="assets/whatsapp.png"/>
+                            <SocialMediaComponent name="Whatsapp" link="https://wa.me/9952982610" source={Whatsapp}/>
 
-                            <SocialMediaComponent name="Gmail" link="mailto:ramkishore1706@gmail.com" source="assets/gmail.png"/>
+                            <SocialMediaComponent name="Gmail" link="mailto:ramkishore1706@gmail.com" source={Gmail}/>
 
-                            <SocialMediaComponent name="Instagram" link="https://www.linkedin.com/in/ramkishore-a-v-aa866828b/" source="assets/instagram.png"/>
+                            <SocialMediaComponent name="Instagram" link="https://www.linkedin.com/in/ramkishore-a-v-aa866828b/" source={Insta}/>
 
                         </div>
                 </div>

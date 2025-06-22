@@ -1,9 +1,9 @@
 // import React from "react";
 // import myImage from './My_Image-removebg-preview.png';
-import aboutMe from '../Images/undraw_developer-avatar_f6ac.svg';
-import journey from '../Images/undraw_luggage_k1gn.svg';
-import skills from '../Images/undraw_certificate_71gt.svg';
-import current from '../Images/undraw_designer_efwz.svg';
+import aboutMe from '../Images/undraw_developer-avatar_f6ac.png';
+import journey from '../Images/undraw_luggage_k1gn.png';
+import skills from '../Images/undraw_certificate_71gt.png';
+import current from '../Images/undraw_designer_efwz.png';
 import { AboutComponentImg,AboutComponentBio } from "./AboutComponent.js";
 function About(){
     return(
