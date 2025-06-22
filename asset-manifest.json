@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/ramkishore-personal-portfolio/static/css/main.7e5e91ec.css",
-    "main.js": "/ramkishore-personal-portfolio/static/js/main.65238a96.js",
+    "main.css": "/ramkishore-personal-portfolio/static/css/main.02cd2400.css",
+    "main.js": "/ramkishore-personal-portfolio/static/js/main.7f753cec.js",
+    "static/media/image1.png": "/ramkishore-personal-portfolio/static/media/image1.874849744cab49a075c3.png",
     "static/media/ramki_flat_illustration.png": "/ramkishore-personal-portfolio/static/media/ramki_flat_illustration.57107a2bdbe2bd3139a1.png",
-    "static/media/undraw_designer_efwz.svg": "/ramkishore-personal-portfolio/static/media/undraw_designer_efwz.de6f76fd3ca06010252533c5b48d8048.svg",
-    "static/media/undraw_luggage_k1gn.svg": "/ramkishore-personal-portfolio/static/media/undraw_luggage_k1gn.b626a7aba0488ee8dedce9bf8d4ac98c.svg",
-    "static/media/undraw_certificate_71gt.svg": "/ramkishore-personal-portfolio/static/media/undraw_certificate_71gt.e7e15a45c80cf3ba93fa12341aa6b109.svg",
-    "static/media/undraw_developer-avatar_f6ac.svg": "/ramkishore-personal-portfolio/static/media/undraw_developer-avatar_f6ac.89691d52d08528ab914db3572e33600c.svg",
+    "static/media/instagram.png": "/ramkishore-personal-portfolio/static/media/instagram.8e408da00539cdef4629.png",
+    "static/media/undraw_luggage_k1gn.png": "/ramkishore-personal-portfolio/static/media/undraw_luggage_k1gn.bf3742988dc06e74ac5c.png",
+    "static/media/undraw_designer_efwz.png": "/ramkishore-personal-portfolio/static/media/undraw_designer_efwz.135c030fa35e6bef6e0b.png",
+    "static/media/undraw_certificate_71gt.png": "/ramkishore-personal-portfolio/static/media/undraw_certificate_71gt.c51b6073c0439db83015.png",
+    "static/media/whatsapp.png": "/ramkishore-personal-portfolio/static/media/whatsapp.c826b0165560636baf0b.png",
+    "static/media/undraw_developer-avatar_f6ac.png": "/ramkishore-personal-portfolio/static/media/undraw_developer-avatar_f6ac.046072dfa9c0f9a4a467.png",
+    "static/media/image2.svg": "/ramkishore-personal-portfolio/static/media/image2.6d6236b1270eedc2fd0ed8683f6652f4.svg",
+    "static/media/linkedin.png": "/ramkishore-personal-portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/image3.png": "/ramkishore-personal-portfolio/static/media/image3.1ff6d944eec044335453.png",
+    "static/media/image4.svg": "/ramkishore-personal-portfolio/static/media/image4.f3bd7fa407b0bcfa0b0234dbcbf4e586.svg",
+    "static/media/image6.svg": "/ramkishore-personal-portfolio/static/media/image6.27eb898bd7125d178d81ba4539fb1347.svg",
     "index.html": "/ramkishore-personal-portfolio/index.html",
-    "main.7e5e91ec.css.map": "/ramkishore-personal-portfolio/static/css/main.7e5e91ec.css.map",
-    "main.65238a96.js.map": "/ramkishore-personal-portfolio/static/js/main.65238a96.js.map"
+    "main.02cd2400.css.map": "/ramkishore-personal-portfolio/static/css/main.02cd2400.css.map",
+    "main.7f753cec.js.map": "/ramkishore-personal-portfolio/static/js/main.7f753cec.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e5e91ec.css",
-    "static/js/main.65238a96.js"
+    "static/css/main.02cd2400.css",
+    "static/js/main.7f753cec.js"
   ]
 }
