@@ -36,15 +36,41 @@ function About(){
                 </div> 
             </div>
             <br></br>
+
             <div className="about_me_container">
                 <div className="about_me_container_img">
                     <img src={current} height={250} width={400} className="myImage"/>
                 </div>
                 <div className="about_me_container_bio">
                     <h1>What I'm Currently Working On ?</h1>
-                    <p>Currently, I'm focusing on improving my skills in full-stack development and working with modern JavaScript frameworks. I'm building both frontend and backend applications, ensuring they are scalable and user-friendly. I'm also started developing mobile application using <em style={{color:'black',fontWeight:'bold'}}>React Native</em> and problem solving skill by learning <em style={{color:'black',fontWeight:'bold'}}>DSA </em>in java.</p>
+                    <p>Currently, I'm focusing on improving my skills in full-stack development and working with modern JavaScript frameworks. I'm building both frontend and backend applications, ensuring they are scalable and user-friendly. I'm also started solving problem by learning <em style={{color:'black',fontWeight:'bold'}}>DSA </em>in java.</p>
                 </div>
             </div>
+            <br></br>
+            <div className="about_me_container" style={{padding:"20px"}}>
+                <div className="about_me_container_bio">
+                    <h1 style={{ color: 'black',padding:0}}>Achievements</h1>
+                    <ul style={{fontSize:'1.2rem'}}>
+                        <li style={{color:'black'}}>
+                            Successfully completed a project at <b style={{ color: 'black' }}>Ashok Leyland </b> 
+                             as a <b style={{ color: 'black' }}>Frontend Developer</b> for the 
+                            <i style={{color:'black'}}> “Design and Development of OT Monitoring System”.</i>
+                        </li>
+                        <li style={{color:'black'}}>
+                            Winner of the <b style={{ color: 'black' }}>SIH Internal Hackathon</b> conducted at college.
+                        </li>
+                        <li style={{color:'black'}}>
+                            Received a <b style={{ color: 'black' }}>Letter of Recommendation</b> from 
+                            <b style={{ color: 'black' }}> Ashok Leyland</b> for project contribution.
+                        </li>
+                    </ul>
+
+                </div>
+                 <div className="about_me_container_img">
+                    <img src={skills} height={400} width={300} className="myImage"/>
+                </div> 
+            </div>
+            
         </div>
 
     );
