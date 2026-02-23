@@ -17,8 +17,10 @@ function App() {
     <div className="App">
     <Router>
       <Navbar />
+      <Home />
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='https://ramki-dev-77.github.io/ramkishore-personal-portfolio/' element={<Home />}/>
           <Route path='/ramkishore-personal-portfolio' element={<Home />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/projects' element={<Projects />}/>
