@@ -89,14 +89,14 @@ function Navbar({ theme, toggleTheme, onOpenResume }) {
 
         {/* Actions */}
         <div className="nav-actions">
-            {/* <button
+            <button
               onClick={toggleTheme}
               className="theme-toggle-btn"
               title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-            </button> */}
+            </button>
 
           <button
             onClick={onOpenResume}
