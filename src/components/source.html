@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"> <!-- data-theme="dark" -->
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,22 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   <style>
     :root {
-      --bg: #0a0a15;
-      --surface: rgba(20, 20, 45, 0.55);
-      --text: #e5e5ff;
-      --accent: #7c3aed;
-      --accent-glow: #a78bfa;
-      --border: rgba(124, 58, 237, 0.25);
-      --glass: blur(16px);
-    }
-
-    [data-theme="light"] {
       --bg: #f9f9ff;
       --surface: rgba(255, 255, 255, 0.72);
       --text: #1a1a3a;
       --accent: #6d28d9;
       --accent-glow: #a78bfa;
       --border: rgba(109, 40, 217, 0.22);
+      --glass: blur(16px);
     }
 
     * {
@@ -313,7 +304,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="theme-btn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
     </div>
   </header>
 
@@ -424,16 +414,6 @@
   </footer>
 
   <script>
-    // Theme toggle
-    const toggle = document.querySelector('.theme-btn');
-    const html = document.documentElement;
-
-    toggle.addEventListener('click', () => {
-      const theme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', theme);
-      toggle.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-    });
-
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {

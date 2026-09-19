@@ -14,22 +14,13 @@ import PdfModal from "./components/pdfModal";
 import { ArrowUp } from "lucide-react";
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("ramki-portfolio-theme") || "dark";
-  });
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [resumeModalOpen, setResumeModalOpen] = useState(false);
 
-  // Sync theme with document
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("ramki-portfolio-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-  };
+    document.documentElement.setAttribute("data-theme", "light");
+  }, []);
 
   // Scroll listener for progress bar and back to top
   useEffect(() => {
@@ -66,11 +57,7 @@ function App() {
 
       <Router>
         {/* Navigation Bar */}
-        <Navbar
-          theme={theme}
-          toggleTheme={toggleTheme}
-          onOpenResume={() => setResumeModalOpen(true)}
-        />
+        <Navbar onOpenResume={() => setResumeModalOpen(true)} />
 
         {/* Page Routes */}
         <Routes>

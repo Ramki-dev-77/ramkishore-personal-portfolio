@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Sun, Moon, Menu, X, FileText } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import "../styles/Navbar.css";
 
-function Navbar({ theme, toggleTheme, onOpenResume }) {
+function Navbar({ onOpenResume }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -89,15 +89,6 @@ function Navbar({ theme, toggleTheme, onOpenResume }) {
 
         {/* Actions */}
         <div className="nav-actions">
-            <button
-              onClick={toggleTheme}
-              className="theme-toggle-btn"
-              title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
-
           <button
             onClick={onOpenResume}
             className="nav-resume-btn"
