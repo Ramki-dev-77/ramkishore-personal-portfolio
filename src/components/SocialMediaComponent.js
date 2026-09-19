@@ -1,9 +1,18 @@
-function SocialMediaComponent(props){
-    return (
-        <div className="social-media">
-            <a href={props.link} target="_blank" rel="noreferrer" title={props.name}><img src={props.source} height={30} width={30} alt={props.name}/></a>
-        </div>
-    );
+import React from "react";
+
+function SocialMediaComponent({ name, link, source }) {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="social-pill"
+      title={name}
+      aria-label={name}
+    >
+      <img src={source} alt={`${name} logo`} />
+    </a>
+  );
 }
 
-export default SocialMediaComponent;
+export default SocialMediaComponent;

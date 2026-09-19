@@ -1,18 +1,22 @@
 
-function AboutComponentBio(props){
-    return(
-        <div className="about_me_container_bio">
-            <h1>{props.heading}</h1>
-            <p>{props.bio}</p>
-        </div>
-    );    
+import React from "react";
+
+function AboutComponentBio({ heading, bio, children }) {
+  return (
+    <div className="story-text-col">
+      <h3>{heading}</h3>
+      <p>{bio}</p>
+      {children}
+    </div>
+  );
 }
 
-function AboutComponentImg(props){
-    return(
-        <div className="about_me_container_img">
-            <img src={props.myImage} height={300} width={300} className="myImage"/>
-        </div>
-    );
+function AboutComponentImg({ myImage, altText = "Illustration representing Ramkishore's journey" }) {
+  return (
+    <div className="story-image-col">
+      <img src={myImage} alt={altText} loading="lazy" />
+    </div>
+  );
 }
-export {AboutComponentBio,AboutComponentImg};
+
+export { AboutComponentBio, AboutComponentImg };

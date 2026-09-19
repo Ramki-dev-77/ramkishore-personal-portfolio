@@ -1,79 +1,107 @@
-// import React from "react";
-// import myImage from './My_Image-removebg-preview.png';
-import aboutMe from '../Images/undraw_developer-avatar_f6ac.png';
-import journey from '../Images/undraw_luggage_k1gn.png';
-import skills from '../Images/undraw_certificate_71gt.png';
-import current from '../Images/undraw_designer_efwz.png';
-import { AboutComponentImg,AboutComponentBio } from "./AboutComponent.js";
-function About(){
-    return(
-        <div class="about-page">
-            <h1>About</h1>
-            <div className="about_me_container">
-                <AboutComponentBio heading="Want to know about me?" bio="Currently pursuing 2nd yr B.Tech in Information Technology at Sri Venkateswara College of Engineering. I have a strong interest in building dynamic, user-friendly websites and applications. With a focus on both frontend and backend technologies, I enjoy experimenting with new tools and frameworks to create meaningful and efficient web experiences.I'm also aspired to work on open source projects to explore and invest my knowledge."/>
-                <AboutComponentImg myImage={aboutMe}/>
-            </div>
-            <br></br>
-            <div className="about_me_container">
-                <AboutComponentImg myImage={journey}/>
-                <AboutComponentBio heading="My Journey" bio="Since I started learning web development, I've been amazed by how the internet connects the world. My journey began with learning the basics of  HTML, CSS, and JavaScript, and quickly expanded to working with advanced frameworks like React, Node.js, and Express. With every project I work on, I am driven to improve my skills and embrace new technologies that shape the digital world."/>
-            </div>
-            <br></br>
-            <div className="about_me_container" style={{padding:"20px"}}>
-                <div className="about_me_container_bio">
-                    <h1>Skills & Technologies</h1>
+import React from "react";
+import aboutMe from "../Images/undraw_developer-avatar_f6ac.png";
+import journey from "../Images/undraw_luggage_k1gn.png";
+import current from "../Images/undraw_designer_efwz.png";
+import { AboutComponentImg, AboutComponentBio } from "./AboutComponent";
+import { Sparkles, Code, Trophy, Briefcase, GraduationCap } from "lucide-react";
+import "../styles/personal.css";
 
-                    <ul className="skills">
-                         <li>Frontend: HTML, CSS, Bootstrap, JavaScript, React</li>
-                        <li>Backend: Node.js, Express.js, MySQL, PostgreSQL</li>
-                        <li>Version Control: Git, GitHub</li>
-                        <li>Other Tools: Visual Studio Code, Postman</li>
-                        <li>Languages: Java, JavaScript, C</li>
-                    </ul>
-                </div>
-                 <div className="about_me_container_img">
-                    <img src={skills} height={400} width={300} className="myImage"/>
-                </div> 
-            </div>
-            <br></br>
+function About() {
+  const stats = [
+    {
+      icon: <GraduationCap size={24} />,
+      number: "4th yr",
+      label: "B.Tech IT @ SVCE"
+    },
+    {
+      icon: <Code size={24} />,
+      number: "6+",
+      label: "Full Stack Projects"
+    },
+    {
+      icon: <Briefcase size={24} />,
+      number: "1",
+      label: "Ashok Leyland Internship"
+    },
+    {
+      icon: <Trophy size={24} />,
+      number: "1st",
+      label: "SIH Hackathon Winner"
+    }
+  ];
 
-            <div className="about_me_container">
-                <div className="about_me_container_img">
-                    <img src={current} height={250} width={400} className="myImage"/>
-                </div>
-                <div className="about_me_container_bio">
-                    <h1>What I'm Currently Working On ?</h1>
-                    <p>Currently, I'm focusing on improving my skills in full-stack development and working with modern JavaScript frameworks. I'm building both frontend and backend applications, ensuring they are scalable and user-friendly. I'm also started solving problem by learning <em style={{color:'black',fontWeight:'bold'}}>DSA </em>in java.</p>
-                </div>
-            </div>
-            <br></br>
-            <div className="about_me_container" style={{padding:"20px"}}>
-                <div className="about_me_container_bio">
-                    <h1 style={{ color: 'black',padding:0}}>Achievements</h1>
-                    <ul style={{fontSize:'1.2rem'}}>
-                        <li style={{color:'black'}}>
-                            Successfully completed a project at <b style={{ color: 'black' }}>Ashok Leyland </b> 
-                             as a <b style={{ color: 'black' }}>Frontend Developer</b> for the 
-                            <i style={{color:'black'}}> “Design and Development of OT Monitoring System”.</i>
-                        </li>
-                        <li style={{color:'black'}}>
-                            Winner of the <b style={{ color: 'black' }}>SIH Internal Hackathon</b> conducted at college.
-                        </li>
-                        <li style={{color:'black'}}>
-                            Received a <b style={{ color: 'black' }}>Letter of Recommendation</b> from 
-                            <b style={{ color: 'black' }}> Ashok Leyland</b> for project contribution.
-                        </li>
-                    </ul>
+  return (
+    <section id="about" className="about-section">
+  <div className="container">
+    <div className="section-header">
+      <span className="section-tag">
+        {/* <Sparkles size={14} /> */}
+        Background & Story
+      </span>
+      <h2 className="section-title">
+        About <span className="gradient-text">Me</span>
+      </h2>
+      <p className="section-subtitle">
+        Get to know my engineering mindset, academic journey at SVCE, and passion for building impactful technology.
+      </p>
+    </div>
 
-                </div>
-                 <div className="about_me_container_img">
-                    <img src={skills} height={400} width={300} className="myImage"/>
-                </div> 
-            </div>
-            
+    {/* Quick Stats Grid */}
+    <div className="about-stats-grid">
+      {stats.map((stat, idx) => (
+        <div key={idx} className="stat-card glass-card">
+          <div className="stat-icon-box">
+            {stat.icon}
+          </div>
+          <div className="stat-number gradient-text">{stat.number}</div>
+          <div className="stat-label">{stat.label}</div>
         </div>
+      ))}
+    </div>
 
-    );
+    {/* Storytelling Bento Cards */}
+    <div className="story-cards-wrapper">
+      
+      {/* Card 1: Want to know about me */}
+      <div className="story-card glass-card">
+        <AboutComponentBio
+          heading="Want to know about me?"
+          bio="I'm currently pursuing my 4th year B.Tech in Information Technology at Sri Venkateswara College of Engineering. As a passionate Full-Stack Developer, I enjoy building dynamic, user-friendly websites and applications that solve real-world problems. Over the years, I've developed a strong foundation in frontend and backend technologies, while continuously exploring new tools and frameworks. I'm passionate about transforming ideas into meaningful digital experiences and contributing to projects that create a positive impact."
+        />
+        <AboutComponentImg
+          myImage={aboutMe}
+          altText="Developer avatar illustration"
+        />
+      </div>
+
+      {/* Card 2: My Journey */}
+      <div className="story-card reverse glass-card">
+        <AboutComponentImg
+          myImage={journey}
+          altText="Journey illustration"
+        />
+        <AboutComponentBio
+          heading="My Journey"
+          bio="My journey into technology began with curiosity about how websites and applications work. I started with HTML, CSS, and JavaScript, gradually expanding my knowledge into React, Node.js, Express, and databases. Throughout my engineering journey, every project and challenge has helped me grow both technically and personally. From academic projects to real-world development experiences, I've learned the importance of writing clean code, solving problems efficiently, and continuously adapting to emerging technologies."
+        />
+      </div>
+
+      {/* Card 3: What I'm Currently Working On */}
+      <div className="story-card glass-card">
+        <AboutComponentBio
+          heading="What I'm Currently Working On?"
+          bio="As a final-year student, I'm focusing on strengthening my full-stack development skills and preparing myself for a career in software development. I'm actively working with React, Node.js, Express, TypeScript, and SQL to build scalable and user-friendly applications. Alongside development, I'm improving my problem-solving skills by practicing Data Structures and Algorithms in Java and Python. I'm also working on projects that combine practical functionality with modern technology, while continuously learning and preparing for industry opportunities."
+        />
+        <AboutComponentImg
+          myImage={current}
+          altText="Working on modern tech illustration"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+  );
 }
 
 export default About;
